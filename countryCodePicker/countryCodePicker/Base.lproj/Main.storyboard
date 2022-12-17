@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="countryCodePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yL-dF-Brf">
+                                <rect key="frame" x="41" y="346" width="332" height="204"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5K5-Pk-32k">
+                                        <rect key="frame" x="25" y="17" width="282" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-e8-kyp">
+                                                <rect key="frame" x="5" y="5.5" width="272" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+91" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-Nf-aJ1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Mobile Number" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6QP-2m-AVc">
+                                                        <rect key="frame" x="57" y="0.0" width="215" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="9kQ-I9-Vat"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="f8i-O3-FlA"/>
+                                            <constraint firstAttribute="trailing" secondItem="V3J-e8-kyp" secondAttribute="trailing" constant="5" id="gVH-Bi-CRu"/>
+                                            <constraint firstItem="V3J-e8-kyp" firstAttribute="leading" secondItem="5K5-Pk-32k" secondAttribute="leading" constant="5" id="gvN-Bd-ns7"/>
+                                            <constraint firstItem="V3J-e8-kyp" firstAttribute="centerY" secondItem="5K5-Pk-32k" secondAttribute="centerY" id="lTy-xK-TbC"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAo-CI-MYT">
+                                        <rect key="frame" x="25" y="120" width="282" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="E7d-aQ-uOt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Validate Mobile Number">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="BnE-6B-b3d"/>
+                                    <constraint firstAttribute="trailing" secondItem="5K5-Pk-32k" secondAttribute="trailing" constant="25" id="Z05-xF-L81"/>
+                                    <constraint firstItem="5K5-Pk-32k" firstAttribute="centerX" secondItem="5yL-dF-Brf" secondAttribute="centerX" id="cce-ir-64q"/>
+                                    <constraint firstItem="aAo-CI-MYT" firstAttribute="top" secondItem="5K5-Pk-32k" secondAttribute="bottom" constant="58" id="k9T-JP-5mc"/>
+                                    <constraint firstItem="5K5-Pk-32k" firstAttribute="trailing" secondItem="aAo-CI-MYT" secondAttribute="trailing" id="pTv-ZH-hvd"/>
+                                    <constraint firstItem="5K5-Pk-32k" firstAttribute="leading" secondItem="aAo-CI-MYT" secondAttribute="leading" id="uQO-02-B72"/>
+                                    <constraint firstItem="5K5-Pk-32k" firstAttribute="leading" secondItem="5yL-dF-Brf" secondAttribute="leading" constant="25" id="wUc-HA-JnQ"/>
+                                    <constraint firstAttribute="height" constant="204" id="xyU-69-uJa"/>
+                                    <constraint firstItem="5K5-Pk-32k" firstAttribute="top" secondItem="5yL-dF-Brf" secondAttribute="top" constant="17" id="z5g-Nw-JoB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23j-KN-oPO">
+                                <rect key="frame" x="41" y="52" width="332" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JPc-D3-exq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95308440920000004" green="0.94859188800000005" blue="0.972553432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5yL-dF-Brf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cgc-tI-mxB"/>
+                            <constraint firstItem="23j-KN-oPO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="DJD-RC-3I4"/>
+                            <constraint firstItem="23j-KN-oPO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Y9R-ft-cLz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="23j-KN-oPO" secondAttribute="trailing" constant="41" id="dUQ-2J-k7c"/>
+                            <constraint firstItem="5yL-dF-Brf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hHo-AC-Kqp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryCodeTxtField" destination="M2g-Nf-aJ1" id="I7n-qO-L1U"/>
+                        <outlet property="mainview" destination="5yL-dF-Brf" id="ssX-Ne-YZK"/>
+                        <outlet property="textfieldView" destination="5K5-Pk-32k" id="1cb-yN-lQA"/>
+                        <outlet property="validateBtn" destination="aAo-CI-MYT" id="6Cf-MC-2Ph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
